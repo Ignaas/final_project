@@ -1,0 +1,215 @@
+/* =============== HEADER =============== */
+
+header {
+    background-color: #f5f5f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav .link-wrapper {
+    display: inline-block;
+    padding: 5px;
+}
+
+nav .link-wrapper.active {
+    border: 2px solid #000080;
+    font-weight: bold;
+}
+
+/* =============== HERO =============== */
+
+.hero-image {
+    height: 150px;
+    background-image: url("../img/hero.jpg");
+    background-size: cover;
+    filter: blur(2px);
+}
+
+@media screen and (min-width: 400px) {
+    .hero-image {
+        height: 300px;
+        background-size: auto;
+        background-attachment: fixed;
+        filter: none;
+
+    }
+}
+
+/* =============== MAIN =============== */
+
+main {
+    margin-top: 50px;
+    min-height: calc(100vh - 200px);
+}
+
+.wrapper {
+    width: 800px;
+    max-width: 100%;
+    /*height: 400px;*/
+    margin: 0 auto;
+    padding: 15px;
+    box-sizing: border-box;
+}
+
+.services-wrapper {
+    max-width: 800px;
+    height: 400px;
+    margin: 20px auto 20px auto;
+}
+
+.service-wrapper {
+    display: inline-block;
+    margin: 20px 0;
+    padding: 10%;
+    width: 100%;
+    background: #2c5282;
+}
+
+.service-card {
+    display: flex;
+    border: 1px solid gray;
+
+}
+
+.card-body {
+    flex: 1 1 auto;
+}
+
+
+.service-name {
+    text-align: center;
+    margin: 0 5px;
+    height: 5%;
+}
+
+.service-info {
+    height: 55%;
+    margin: 0 5px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.service-card img {
+    width: 100% !important;
+    height: 40px;
+}
+
+
+@media screen and (min-width: 399px) {
+    .service-wrapper {
+        padding: 5% 10%;
+        width: 25%;
+        /*display: flex;*/
+    }
+
+
+}
+
+
+.block {
+    border-bottom: 6px dotted #efefef;
+    padding: 15px 0;
+    margin-bottom: 15px;
+}
+
+
+/* =============== TABLE =============== */
+
+table {
+    padding: 15px;
+    border: 1px solid #e1e1e1;
+}
+
+table .delete, table .edit {
+    cursor: pointer;
+}
+
+
+/* =============== MODAL =============== */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0, 0, 0); /* Fallback color */
+    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
+}
+
+.modal .wrapper {
+    background-color: #fefefe;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.modal .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modal .close:hover,
+.modal .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* =============== FORM =============== */
+
+form .field-wrapper {
+    margin-bottom: 1.5rem;
+}
+
+form .field-error, form .error {
+    color: red;
+}
+
+form .message-wrapper {
+    margin-bottom: 2em;
+}
+
+form button {
+    transition: all 0.5s ease;
+}
+
+form.success button {
+    font-size: 0;
+    background: #000080;
+}
+
+form.success button:after {
+    font-size: 20px;
+    content: '✔';
+}
+
+textarea[name="comment"] {
+    height: 20vh;
+}
+
+
+/* =============== FOOTER =============== */
+
+footer {
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #f5f5f5;
+}
