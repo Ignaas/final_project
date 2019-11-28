@@ -88,7 +88,7 @@ class User
         $this->data['phone'] = $phone;
     }
 
-    public function setReview(Array $review)
+    public function setReview($review)
     {
         $this->data['review'] = $review;
     }

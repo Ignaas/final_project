@@ -32,7 +32,39 @@ if (!App::$session->userLoggedIn()) {
     <?php print $hero->render(); ?>
 </div>
 
-<p>Work in progress</p>
+<main>
+    <section class="wrapper">
+        <div class="services-container">
+            <div class="service">
+                <div class="card">
+                    <img src="media/img/service-growth.svg" class="card-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Expansive</h5>
+                        <span class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="card">
+                    <img src="media/img/service-guarantee.svg" class="card-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Certified</h5>
+                        <span class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                    </div>
+                </div>
+            </div>
+            <div class="service">
+                <div class="card">
+                    <img src="media/img/service-taxi.svg" class="card-img">
+                    <div class="card-body">
+                        <h5 class="card-title">Modern</h5>
+                        <span class="card-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</main>
 
 <footer>
     <?php print $footer->render(); ?>

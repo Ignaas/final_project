@@ -39,11 +39,22 @@ nav .link-wrapper.active {
         background-size: auto;
         background-attachment: fixed;
         filter: none;
-
     }
 }
 
 /* =============== MAIN =============== */
+
+@media screen and (min-width: 400px) {
+    .services-container {
+        height: 400px;
+        display: flex;
+    }
+
+    .service {
+        width: 25%;
+        margin: auto 1% !important;
+    }
+}
 
 main {
     margin-top: 50px;
@@ -53,67 +64,52 @@ main {
 .wrapper {
     width: 800px;
     max-width: 100%;
-    /*height: 400px;*/
     margin: 0 auto;
     padding: 15px;
     box-sizing: border-box;
 }
 
-.services-wrapper {
-    max-width: 800px;
-    height: 400px;
+.services-container {
     margin: 20px auto 20px auto;
 }
 
-.service-wrapper {
+.service {
     display: inline-block;
     margin: 20px 0;
-    padding: 10%;
     width: 100%;
-    background: #2c5282;
 }
 
-.service-card {
+.card {
     display: flex;
+    flex-direction: column;
     border: 1px solid gray;
+}
 
+.card-img {
+    height: 80px;
+    width: 100%;
+    display: block;
+    margin-top: 5px;
+    user-select: none;
 }
 
 .card-body {
     flex: 1 1 auto;
+    padding: 5px;
 }
 
 
-.service-name {
+.card-title {
     text-align: center;
     margin: 0 5px;
     height: 5%;
+    padding: 10px 0;
+    font-weight: bold;
 }
 
-.service-info {
-    height: 55%;
-    margin: 0 5px;
-    display: flex;
-    flex-wrap: wrap;
+.card-text {
+    font-size: 14px;
 }
-
-
-.service-card img {
-    width: 100% !important;
-    height: 40px;
-}
-
-
-@media screen and (min-width: 399px) {
-    .service-wrapper {
-        padding: 5% 10%;
-        width: 25%;
-        /*display: flex;*/
-    }
-
-
-}
-
 
 .block {
     border-bottom: 6px dotted #efefef;
@@ -121,54 +117,11 @@ main {
     margin-bottom: 15px;
 }
 
-
 /* =============== TABLE =============== */
 
 table {
     padding: 15px;
     border: 1px solid #e1e1e1;
-}
-
-table .delete, table .edit {
-    cursor: pointer;
-}
-
-
-/* =============== MODAL =============== */
-
-.modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1; /* Sit on top */
-    left: 0;
-    top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0, 0, 0); /* Fallback color */
-    background-color: rgba(0, 0, 0, 0.9); /* Black w/ opacity */
-}
-
-.modal .wrapper {
-    background-color: #fefefe;
-    margin: 15% auto; /* 15% from the top and centered */
-    padding: 20px;
-    border: 1px solid #888;
-    width: 80%; /* Could be more or less, depending on screen size */
-}
-
-.modal .close {
-    color: #aaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
-}
-
-.modal .close:hover,
-.modal .close:focus {
-    color: black;
-    text-decoration: none;
-    cursor: pointer;
 }
 
 /* =============== FORM =============== */

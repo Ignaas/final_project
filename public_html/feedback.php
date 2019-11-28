@@ -46,7 +46,6 @@ switch (get_form_action()) {
     <link rel="stylesheet" href="media/css/style.css">
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link rel="icon" href="favicon.ico" type="image/x-icon">
-    <!--    <script defer src="media/js/app.js"></script>-->
 </head>
 <body>
 <header>
